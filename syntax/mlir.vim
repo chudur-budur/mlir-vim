@@ -43,19 +43,70 @@ syn keyword mlirOps splat store select sqrt subf subi subview tanh
 syn keyword mlirOps view
 
 " Math ops.
+syn match mlirOps /\<math\.absf\>/
+syn match mlirOps /\<math\.absi\>/
+syn match mlirOps /\<math\.acos\>/
+syn match mlirOps /\<math\.acosh\>/
+syn match mlirOps /\<math\.asin\>/
+syn match mlirOps /\<math\.asinh\>/
+syn match mlirOps /\<math\.atan\>/
+syn match mlirOps /\<math\.atan2\>/
+syn match mlirOps /\<math\.atanh\>/
+syn match mlirOps /\<math\.cbrt\>/
+syn match mlirOps /\<math\.ceil\>/
+syn match mlirOps /\<math\.clampf\>/
+syn match mlirOps /\<math\.copysign\>/
+syn match mlirOps /\<math\.cos\>/
+syn match mlirOps /\<math\.cosh\>/
+syn match mlirOps /\<math\.ctlz\>/
+syn match mlirOps /\<math\.ctpop\>/
+syn match mlirOps /\<math\.cttz\>/
 syn match mlirOps /\<math\.erf\>/
 syn match mlirOps /\<math\.erfc\>/
+syn match mlirOps /\<math\.exp\>/
+syn match mlirOps /\<math\.exp2\>/
+syn match mlirOps /\<math\.expm1\>/
+syn match mlirOps /\<math\.floor\>/
+syn match mlirOps /\<math\.fma\>/
+syn match mlirOps /\<math\.fpowi\>/
+syn match mlirOps /\<math\.ipowi\>/
+syn match mlirOps /\<math\.isfinite\>/
+syn match mlirOps /\<math\.isinf\>/
+syn match mlirOps /\<math\.isnan\>/
+syn match mlirOps /\<math\.isnormal\>/
+syn match mlirOps /\<math\.log\>/
+syn match mlirOps /\<math\.log10\>/
+syn match mlirOps /\<math\.log1p\>/
+syn match mlirOps /\<math\.log2\>/
+syn match mlirOps /\<math\.powf\>/
+syn match mlirOps /\<math\.round\>/
+syn match mlirOps /\<math\.roundeven\>/
+syn match mlirOps /\<math\.rsqrt\>/
+syn match mlirOps /\<math\.sin\>/
+syn match mlirOps /\<math\.sincos\>/
+syn match mlirOps /\<math\.sinh\>/
+syn match mlirOps /\<math\.sqrt\>/
+syn match mlirOps /\<math\.tan\>/
+syn match mlirOps /\<math\.tanh\>/
+syn match mlirOps /\<math\.trunc\>/
 
 " Affine ops.
 syn match mlirOps /\<affine\.apply\>/
+syn match mlirOps /\<affine\.delinearize_index\>/
 syn match mlirOps /\<affine\.dma_start\>/
 syn match mlirOps /\<affine\.dma_wait\>/
 syn match mlirOps /\<affine\.for\>/
 syn match mlirOps /\<affine\.if\>/
+syn match mlirOps /\<affine\.linearize_index\>/
 syn match mlirOps /\<affine\.load\>/
+syn match mlirOps /\<affine\.max\>/
+syn match mlirOps /\<affine\.min\>/
 syn match mlirOps /\<affine\.parallel\>/
 syn match mlirOps /\<affine\.prefetch\>/
 syn match mlirOps /\<affine\.store\>/
+syn match mlirOps /\<affine\.vector_load\>/
+syn match mlirOps /\<affine\.vector_store\>/
+syn match mlirOps /\<affine\.yield\>/
 
 " scf ops.
 syn match mlirOps /\<scf\.condition\>/
@@ -65,6 +116,7 @@ syn match mlirOps /\<scf\.forall\>/
 syn match mlirOps /\<scf\.forall\.in_parallel\>/
 syn match mlirOps /\<scf\.if\>/
 syn match mlirOps /\<scf\.index_switch\>/
+syn match mlirOps /\<scf\.parallel\>/
 syn match mlirOps /\<scf\.reduce\>/
 syn match mlirOps /\<scf\.reduce\.return\>/
 syn match mlirOps /\<scf\.while\>/
