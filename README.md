@@ -2,7 +2,7 @@
 
 There is already an MLIR plugin for vim in [`llvm-project/mlir/utils/vim`](https://github.com/llvm/llvm-project/tree/main/mlir/utils/vim) that
 many people don't notice although they can be very handy. This repo is stolen
-from there with two extra scripts, that makes it even more handy.
+from there and adds more expanded mlir syntax.
 
 ### How to use (stand-alone):
 
@@ -13,16 +13,10 @@ https://github.com/chudur-budur/mlir-vim.git
 cd mlir-vim
 ```
 
-Run the install.sh script:
+and add the repo to your vim runtimepath:
 
-```bash
-./install.sh
-```
-
-To uninstall:
-
-```bash
-./uninstall.sh
+```vim
+:set rtp+=/path/to/your/mlir-vim/repo
 ```
 
 ### How to use with vim-plug:
@@ -40,19 +34,6 @@ call plug#begin()
 Plug 'chudur-budur/mlir-vim', { 'do' : './install.sh' }
 
 call plug#end()
-```
-
-To uninstall, just run the uninstall.sh script in the `.vim/plugged/mlir-vim` folder
-(or the folder it's been installed by vim-plug):
-
-```bash
-./.vim/plugged/mlir-vim/uninstall.sh
-```
-
-then, inside vim:
-
-```vim
-:PlugClean
 ```
 
 ---
