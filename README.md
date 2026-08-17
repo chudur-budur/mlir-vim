@@ -31,7 +31,7 @@ call plug#begin()
 " ... your other vim-plug plugins
 " ...
 
-Plug 'chudur-budur/mlir-vim', { 'do' : './install.sh' }
+Plug 'chudur-budur/mlir-vim'
 
 call plug#end()
 ```
