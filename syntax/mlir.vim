@@ -35,6 +35,8 @@ syn match mlirType /x\s*\zsvector/
 
 " Operations.
 
+"acc dialect ops.
+
 " Affine ops.
 syn match mlirOps /\<affine\.apply\>/
 syn match mlirOps /\<affine\.delinearize_index\>/
@@ -53,6 +55,8 @@ syn match mlirOps /\<affine\.vector_load\>/
 syn match mlirOps /\<affine\.vector_store\>/
 syn match mlirOps /\<affine\.yield\>/
 
+" amdgpu dialect ops
+
 " Arith ops.
 syn match mlirOps /\<arith\.addf\>/
 syn match mlirOps /\<arith\.addi\>/
@@ -70,9 +74,33 @@ syn match mlirOps /\<arith\.sitofp\>/
 syn match mlirOps /\<arith\.subf\>/
 syn match mlirOps /\<arith\.subi\>/
 
+" arm_neon dialect ops.
+
+" arm_sve dialect ops.
+
+" ArmSME dialect ops.
+
+" async dialect ops.
+
+" bufferization dialect ops.
+
+" cf dialect ops.
+
+" complex dialect ops.
+
+" dlti dialect ops.
+
+" emitc dialect ops.
+
 " Func ops.
 syn match mlirOps /\<func\.call\>/
 syn match mlirOps /\<func\.call_indirect\>/
+
+" gpu dialect ops.
+
+" index dialect ops.
+
+" irdl dialect ops.
 
 " Linalg ops.
 syn match mlirOps /\<linalg\.index\>/
@@ -328,6 +356,26 @@ syn match mlirOps /\<memref\.store\>/
 syn match mlirOps /\<memref\.subview\>/
 syn match mlirOps /\<memref\.view\>/
 
+" ml_program dialect ops.
+
+" mpi dialect ops.
+
+" nvgpu dialect ops.
+
+" nvvm dialect ops.
+
+" omp dialect ops.
+
+" pdl_interp dialect ops.
+
+" pdl dialect ops.
+
+" ptr dialect ops.
+
+" quant dialect ops.
+
+" rocdl dialect ops.
+
 " scf ops.
 syn match mlirOps /\<scf\.condition\>/
 syn match mlirOps /\<scf\.execute_region\>/
@@ -341,6 +389,14 @@ syn match mlirOps /\<scf\.reduce\>/
 syn match mlirOps /\<scf\.reduce\.return\>/
 syn match mlirOps /\<scf\.while\>/
 syn match mlirOps /\<scf\.yield\>/
+
+" shape dialect ops.
+
+" shard dialect ops.
+
+" smt dialect ops.
+
+" sparse_tensor dialect ops.
 
 " Tensor ops.
 syn match mlirOps /\<tensor\.bitcast\>/
@@ -364,6 +420,10 @@ syn match mlirOps /\<tensor\.reshape\>/
 syn match mlirOps /\<tensor\.scatter\>/
 syn match mlirOps /\<tensor\.splat\>/
 syn match mlirOps /\<tensor\.yield\>/
+
+" ub dialect ops.
+
+" vcix dialect ops.
 
 " Vector ops.
 syn match mlirOps /\<vector\.bitcast\>/
@@ -405,6 +465,14 @@ syn match mlirOps /\<vector\.transpose\>/
 syn match mlirOps /\<vector\.type_cast\>/
 syn match mlirOps /\<vector\.vscale\>/
 syn match mlirOps /\<vector\.yield\>/
+
+" wasmssa dialect ops.
+
+" x86 dialect ops.
+
+" xegpu dialect ops.
+
+" xevm dialect ops.
 
 " SPIR-V arithmetic ops.
 syn match mlirOps /\<spirv\.Dot\>/
