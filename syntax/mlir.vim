@@ -34,13 +34,43 @@ syn match mlirType /\<vector\ze\s*<.*>/
 syn match mlirType /x\s*\zsvector/
 
 " Operations.
-" TODO: this list is not exhaustive.
-syn keyword mlirOps alloc alloca addf addi and call call_indirect cmpf cmpi
-syn keyword mlirOps constant dealloc divf dma_start dma_wait dim exp
-syn keyword mlirOps getTensor index_cast load log memref_cast
-syn keyword mlirOps memref_shape_cast mulf muli negf powf prefetch rsqrt sitofp
-syn keyword mlirOps splat store select sqrt subf subi subview tanh
-syn keyword mlirOps view
+
+" Arith ops.
+syn match mlirOps /\<arith\.addf\>/
+syn match mlirOps /\<arith\.addi\>/
+syn match mlirOps /\<arith\.andi\>/
+syn match mlirOps /\<arith\.cmpf\>/
+syn match mlirOps /\<arith\.cmpi\>/
+syn match mlirOps /\<arith\.constant\>/
+syn match mlirOps /\<arith\.divf\>/
+syn match mlirOps /\<arith\.index_cast\>/
+syn match mlirOps /\<arith\.mulf\>/
+syn match mlirOps /\<arith\.muli\>/
+syn match mlirOps /\<arith\.negf\>/
+syn match mlirOps /\<arith\.select\>/
+syn match mlirOps /\<arith\.sitofp\>/
+syn match mlirOps /\<arith\.subf\>/
+syn match mlirOps /\<arith\.subi\>/
+
+" Func ops.
+syn match mlirOps /\<func\.call\>/
+syn match mlirOps /\<func\.call_indirect\>/
+
+" Memref ops.
+syn match mlirOps /\<memref\.alloc\>/
+syn match mlirOps /\<memref\.alloca\>/
+syn match mlirOps /\<memref\.cast\>/
+syn match mlirOps /\<memref\.dealloc\>/
+syn match mlirOps /\<memref\.dim\>/
+syn match mlirOps /\<memref\.load\>/
+syn match mlirOps /\<memref\.prefetch\>/
+syn match mlirOps /\<memref\.store\>/
+syn match mlirOps /\<memref\.subview\>/
+syn match mlirOps /\<memref\.view\>/
+
+" Tensor ops.
+syn match mlirOps /\<tensor\.dim\>/
+syn match mlirOps /\<tensor\.splat\>/
 
 " Math ops.
 syn match mlirOps /\<math\.absf\>/
