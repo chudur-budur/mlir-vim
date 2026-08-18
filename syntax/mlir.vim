@@ -365,6 +365,47 @@ syn match mlirOps /\<tensor\.scatter\>/
 syn match mlirOps /\<tensor\.splat\>/
 syn match mlirOps /\<tensor\.yield\>/
 
+" Vector ops.
+syn match mlirOps /\<vector\.bitcast\>/
+syn match mlirOps /\<vector\.broadcast\>/
+syn match mlirOps /\<vector\.compressstore\>/
+syn match mlirOps /\<vector\.constant_mask\>/
+syn match mlirOps /\<vector\.contract\>/
+syn match mlirOps /\<vector\.create_mask\>/
+syn match mlirOps /\<vector\.deinterleave\>/
+syn match mlirOps /\<vector\.expandload\>/
+syn match mlirOps /\<vector\.extract\>/
+syn match mlirOps /\<vector\.extract_strided_slice\>/
+syn match mlirOps /\<vector\.fma\>/
+syn match mlirOps /\<vector\.from_elements\>/
+syn match mlirOps /\<vector\.gather\>/
+syn match mlirOps /\<vector\.insert\>/
+syn match mlirOps /\<vector\.insert_strided_slice\>/
+syn match mlirOps /\<vector\.interleave\>/
+syn match mlirOps /\<vector\.load\>/
+syn match mlirOps /\<vector\.mask\>/
+syn match mlirOps /\<vector\.maskedload\>/
+syn match mlirOps /\<vector\.maskedstore\>/
+syn match mlirOps /\<vector\.multi_reduction\>/
+syn match mlirOps /\<vector\.outerproduct\>/
+syn match mlirOps /\<vector\.print\>/
+syn match mlirOps /\<vector\.reduction\>/
+syn match mlirOps /\<vector\.scalable\.extract\>/
+syn match mlirOps /\<vector\.scalable\.insert\>/
+syn match mlirOps /\<vector\.scan\>/
+syn match mlirOps /\<vector\.scatter\>/
+syn match mlirOps /\<vector\.shape_cast\>/
+syn match mlirOps /\<vector\.shuffle\>/
+syn match mlirOps /\<vector\.step\>/
+syn match mlirOps /\<vector\.store\>/
+syn match mlirOps /\<vector\.to_elements\>/
+syn match mlirOps /\<vector\.transfer_read\>/
+syn match mlirOps /\<vector\.transfer_write\>/
+syn match mlirOps /\<vector\.transpose\>/
+syn match mlirOps /\<vector\.type_cast\>/
+syn match mlirOps /\<vector\.vscale\>/
+syn match mlirOps /\<vector\.yield\>/
+
 " SPIR-V arithmetic ops.
 syn match mlirOps /\<spirv\.Dot\>/
 syn match mlirOps /\<spirv\.FAdd\>/
