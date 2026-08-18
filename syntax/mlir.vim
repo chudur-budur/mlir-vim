@@ -343,8 +343,27 @@ syn match mlirOps /\<scf\.while\>/
 syn match mlirOps /\<scf\.yield\>/
 
 " Tensor ops.
+syn match mlirOps /\<tensor\.bitcast\>/
+syn match mlirOps /\<tensor\.cast\>/
+syn match mlirOps /\<tensor\.collapse_shape\>/
+syn match mlirOps /\<tensor\.concat\>/
 syn match mlirOps /\<tensor\.dim\>/
+syn match mlirOps /\<tensor\.empty\>/
+syn match mlirOps /\<tensor\.expand_shape\>/
+syn match mlirOps /\<tensor\.extract\>/
+syn match mlirOps /\<tensor\.extract_slice\>/
+syn match mlirOps /\<tensor\.from_elements\>/
+syn match mlirOps /\<tensor\.gather\>/
+syn match mlirOps /\<tensor\.generate\>/
+syn match mlirOps /\<tensor\.insert\>/
+syn match mlirOps /\<tensor\.insert_slice\>/
+syn match mlirOps /\<tensor\.pad\>/
+syn match mlirOps /\<tensor\.parallel_insert_slice\>/
+syn match mlirOps /\<tensor\.rank\>/
+syn match mlirOps /\<tensor\.reshape\>/
+syn match mlirOps /\<tensor\.scatter\>/
 syn match mlirOps /\<tensor\.splat\>/
+syn match mlirOps /\<tensor\.yield\>/
 
 " SPIR-V arithmetic ops.
 syn match mlirOps /\<spirv\.Dot\>/
